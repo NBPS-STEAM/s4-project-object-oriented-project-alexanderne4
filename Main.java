@@ -17,7 +17,10 @@ class App {
 
       public static void main(String[] args) { 
         player newPlayer = new player();
+        init init = new init();
+
         newPlayer.playerSetUp();
+        init.intro();
       } 
   
   }
