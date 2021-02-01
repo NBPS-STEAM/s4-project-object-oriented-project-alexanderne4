@@ -31,6 +31,7 @@ public class  player {
 		System.out.println("My name is Coueus, I'm the crew member of the secret operation");
     System.out.println("Well, last crew member....");
     System.out.println("What is your name stranger?");
+    //setter
       playerName = myScanner.nextLine();
       System.out.println("Hmmm... " + playerName + ", sounds promising..");
   }

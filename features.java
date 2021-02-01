@@ -16,7 +16,7 @@ public void passwordGame(){
   System.out.println("//Type the full password//");
       
       password = myScanner.nextInt();
-      if(password == 2481632){
+      if(password == 2481632){            //getter
         System.out.println("Nice job! " + player.playerName);
       }
       else {
