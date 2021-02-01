@@ -1,11 +1,14 @@
 import java.util.Scanner;
 import java.util.*;
 
-public class player {
-  Scanner myScanner = new Scanner(System.in);
-  String playerName;
+public class  player {
+
+  static Scanner myScanner = new Scanner(System.in);
+  public static String playerName;
   int playerHp = 100;
-  public void playerSetUp(){
+
+
+  public static void playerSetUp(){
     System.out.println("-----------------------------------------------------------------");
     System.out.println("                       12:08AM                             ");
    

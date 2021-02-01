@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//this class introduces the story to the player
 public  class init{
 
 Scanner myScanner = new Scanner(System.in);

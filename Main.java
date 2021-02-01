@@ -3,7 +3,6 @@ import java.util.*;
 
 class App {
 
-  String playerName; 
   int choice; 
   int gun;
   int medkit;
@@ -16,11 +15,15 @@ class App {
   int line;
 
       public static void main(String[] args) { 
+        // instantiationg classes(possibility to create couple players)
         player newPlayer = new player();
         init init = new init();
+        features pass = new features();
 
-        newPlayer.playerSetUp();
+      //executing 
+      newPlayer.playerSetUp();
         init.intro();
+        pass.passwordGame();
       } 
   
   }
