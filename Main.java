@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-class App {
+class Main {
 
   int choice; 
   int gun;
@@ -16,14 +16,15 @@ class App {
 
       public static void main(String[] args) { 
         // instantiationg classes(possibility to create couple players)
-        player newPlayer = new player();
+        
+        Player newPlayer = new Player();
         init init = new init();
         features pass = new features();
 
       //executing 
       newPlayer.playerSetUp();
         init.intro();
-        pass.passwordGame();
+        pass.passwordGame(newPlayer);
       } 
   
   }

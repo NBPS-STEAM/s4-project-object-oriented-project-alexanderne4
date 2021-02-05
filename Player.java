@@ -1,14 +1,31 @@
 import java.util.Scanner;
 import java.util.*;
 
-public class  player {
+public class  Player {
 
   static Scanner myScanner = new Scanner(System.in);
-  public static String playerName;
-  int playerHp = 100;
+  //playerName is visible and can be called from other objects and I can call it without creating an object of the class 
+  private String playerName;
+  private int playerHp = 100;
+
+  public String getPlayerName() {
+    return playerName;
+  }
+
+  public int getPlayerHp() {
+    return playerHp;
+  }
+
+  public void takeDamage(int damage) {
+    playerHp -= damage;
+  }
+
+  public void setPlayerName(String playerName) {
+    this.playerName = playerName;
+  }
 
 
-  public static void playerSetUp(){
+  public void playerSetUp(){
     System.out.println("-----------------------------------------------------------------");
     System.out.println("                       12:08AM                             ");
    
@@ -32,7 +49,9 @@ public class  player {
     System.out.println("Well, last crew member....");
     System.out.println("What is your name stranger?");
     //setter
-      playerName = myScanner.nextLine();
+      String playerName = myScanner.nextLine();
+      setPlayerName(playerName);
       System.out.println("Hmmm... " + playerName + ", sounds promising..");
+       
   }
 }

@@ -11,19 +11,22 @@ public class features {
   int flashlight;
   int choice; 
 // logic game
-public void passwordGame(){
+public void passwordGame(Player player){
   System.out.println("There is a code lock on the door, I have a paper where states [24816..], but the last two numbers scrached. Do you have any ideas?");
-  System.out.println("//Type the full password//");
+  while(true) { 
+    System.out.println("//Type the full password//");
       
-      password = myScanner.nextInt();
-      if(password == 2481632){            //getter
-        System.out.println("Nice job! " + player.playerName);
-      }
-      else {
-        System.out.println("Try again! " + player.playerName);
-        System.out.println("I think you should find a regularity between numbers");
-        passwordGame();
-      }
+    password = myScanner.nextInt();
+    if(password == 2481632){            //getter
+      System.out.println("Nice job! " + player.getPlayerName());
+      break;
+    }
+    else {
+      System.out.println("Try again! " + player.getPlayerName());
+      System.out.println("I think you should find a regularity between numbers");
+      
+    }
+  } 
 }
 
 // inventory 
