@@ -20,11 +20,13 @@ class Main {
         Player newPlayer = new Player();
         init init = new init();
         features pass = new features();
+        Fight kkk = new Fight();
 
       //executing 
       newPlayer.playerSetUp();
         init.intro();
         pass.passwordGame(newPlayer);
+        kkk.startFight();
       } 
   
   }
