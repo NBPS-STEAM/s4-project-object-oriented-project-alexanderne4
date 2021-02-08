@@ -15,8 +15,8 @@ class Main {
   //int line;
 
       public static void main(String[] args) { 
-        // instantiationg classes(possibility to create couple players)
         
+        // instantiationg classes(possibility to create couple players)
         Player newPlayer = new Player();
         init init = new init();
         features invent = new features();

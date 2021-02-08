@@ -8,21 +8,21 @@ public class  Player {
   private String playerName;
   private int playerHp = 100;
 
-  public String getPlayerName() {
-    return playerName;
-  }
+      public String getPlayerName() {
+        return playerName;
+      }
 
-  public int getPlayerHp() {
-    return playerHp;
-  }
+      public int getPlayerHp() {
+        return playerHp;
+      }
 
-  public void takeDamage(int damage) {
-    playerHp -= damage;
-  }
+      public void takeDamage(int damage) {
+        playerHp -= damage;
+      }
 
-  public void setPlayerName(String playerName) {
-    this.playerName = playerName;
-  }
+        public void setPlayerName(String playerName) {
+          this.playerName = playerName;
+        }
 
 
   public void playerSetUp(){
