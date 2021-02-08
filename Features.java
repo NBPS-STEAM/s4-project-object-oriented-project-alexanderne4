@@ -58,6 +58,7 @@ public void passwordGame(Player player){
 // fighting system
   public void fight(){
         while(shadowHp <=100 && shadowHp !=20){
+          System.out.println("What should I take with me?");
         System.out.println("\n1.FIRE!");
           System.out.println("\n2.DODGE!");
           choice = myScanner.nextInt();

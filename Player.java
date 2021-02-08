@@ -16,10 +16,6 @@ public class  Player {
         return playerHp;
       }
 
-      public void takeDamage(int damage) {
-        playerHp -= damage;
-      }
-
         public void setPlayerName(String playerName) {
           this.playerName = playerName;
         }

@@ -6,6 +6,7 @@ public  class Init{
 Scanner myScanner = new Scanner(System.in);
 public String playerName;
 int choice;
+// introduction of the story 
 public  void intro(){
   
  System.out.println("\n1.Are you kidding me?");
@@ -33,7 +34,7 @@ public  void intro(){
  System.out.println("[CONNECTING...]");
  System.out.println("[AUTHORIZING...]");
  System.out.println("[SUCCESSFUL...]");
- System.out.println("Hey " + playerName + ", just had a frozen seaweed for diner, disgusting...");
+ System.out.println("Hey, just had a frozen seaweed for diner, disgusting...");
  System.out.println("I will explain you everything, but you have to keep it between us, ok?");
  System.out.println("I'm a member,hmm ex-member, of the secret operation [Tomorow's sunrise]. This operation was founded by the goverments of 56 countries. Our goal was to settle on the planet named SU-556 and find the source of the signal that US goverment got somwhere in 1960. After they decoded this signal they got next message [We are watching you].");
  System.out.println("We flew to this planet in 1969 under the huise of flying to the moon.");
@@ -46,7 +47,9 @@ public  void intro(){
  System.out.println ("-----------------------------------------------------------------");
 
 }
+//ending of the project 
+public void end(){
+  System.out.println("You have reached the end of this project. Thank you");
 
-
-
+}
 }

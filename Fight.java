@@ -12,7 +12,7 @@ public class Fight{
   Fight(){
   shadowHp = 100; 
   playerHp = 100;
-  damage = 15;
+  damage = 50;
 }
 
 // Parameterized Constructor with three arguments 
@@ -36,7 +36,7 @@ damage = dmg;
   }
 
    public void startFight(){
-     
+
   while(shadowHp <=100 && shadowHp !=20){
     System.out.println("\n1.FIRE!");
     System.out.println("\n2.DODGE!");

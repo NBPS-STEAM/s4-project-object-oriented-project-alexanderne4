@@ -15,14 +15,15 @@ class Main {
   //int line;
 
       public static void main(String[] args) { 
-        
+
         // instantiationg classes(possibility to create couple players)
         Player newPlayer = new Player();
-        init init = new init();
+        Init init = new Init();
         features invent = new features();
         features pass = new features();
         Fight kkk = new Fight();
         DevIntro me = new DevIntro(2002, "Alexander", 2);
+        Init end = new Init();
 
       //executing 
         newPlayer.playerSetUp();
@@ -30,6 +31,7 @@ class Main {
         invent.inventory();
         pass.passwordGame(newPlayer);
         kkk.startFight();
+        end.end();
       } 
   
   }
