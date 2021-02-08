@@ -36,6 +36,7 @@ damage = dmg;
   }
 
    public void startFight(){
+     
   while(shadowHp <=100 && shadowHp !=20){
     System.out.println("\n1.FIRE!");
     System.out.println("\n2.DODGE!");
