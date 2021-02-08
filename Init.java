@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 //this class introduces the story to the player
-public  class init{
+public  class Init{
 
 Scanner myScanner = new Scanner(System.in);
 public String playerName;

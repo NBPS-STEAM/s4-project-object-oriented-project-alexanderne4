@@ -8,17 +8,20 @@ public class Fight{
   public int playerHp;
   public int damage;
 
+// Default Constructor 
   Fight(){
   shadowHp = 100; 
   playerHp = 100;
   damage = 15;
 }
+// Parameterized Constructor with three arguments 
 Fight(int pHp, int sHp, int dmg)
 {
 playerHp = pHp;
 shadowHp = sHp;
 damage = dmg;
 }
+
   public int getplayerHp() {
     return playerHp;
   }

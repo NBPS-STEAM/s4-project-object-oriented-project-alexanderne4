@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class features {
+public class Features {
   
   Scanner myScanner = new Scanner(System.in);
   int password; 
