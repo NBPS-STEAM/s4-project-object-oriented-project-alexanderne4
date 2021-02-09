@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class Features {
   
   Scanner myScanner = new Scanner(System.in);
-  int password; 
-  int shadowHp = 100; 
-  int playerHp = 100;
-  int gun;
-  int medkit;
-  int flashlight;
-  int choice; 
+  private int password; 
+  private int shadowHp = 100; 
+  private int playerHp = 100;
+  private int gun;
+  private int medkit;
+  private int flashlight;
+  private int choice; 
 // logic game
 public void passwordGame(Player player){
   System.out.println("There is a code lock on the door, I have a paper where states [24816..], but the last two numbers scrached. Do you have any ideas?");
@@ -54,37 +54,4 @@ public void passwordGame(Player player){
       System.out.println("It won't be superfluous");
     }
   }
-
-// fighting system
-  public void fight(){
-        while(shadowHp <=100 && shadowHp !=20){
-          System.out.println("What should I take with me?");
-        System.out.println("\n1.FIRE!");
-          System.out.println("\n2.DODGE!");
-          choice = myScanner.nextInt();
-          if(choice == 1){
-            System.out.println("Nice shot!");
-            shadowHp -= 20; 
-            playerHp -= 50;
-            fight();
-          }
-          else{
-            System.out.println("Thats was close!");
-            playerHp += 25;
-          }
-          if(shadowHp <= 20){
-            System.out.println("It ran away!");
-            break;
-          }
-          while(playerHp <= 0){
-            System.out.println("I can not stand anymore...");
-            System.out.println("[SIGNAL LOST...]");
-          System.out.println("[DISCONNECTED...]");
-          playerHp +=100;
-          shadowHp +=100;
-          
-
-          }
-              }
-}
 }

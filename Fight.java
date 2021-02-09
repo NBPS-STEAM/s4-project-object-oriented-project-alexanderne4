@@ -4,9 +4,9 @@ public class Fight{
 
   Scanner myScanner = new Scanner(System.in);
   int choice;
-  public int shadowHp;
-  public int playerHp;
-  public int damage;
+  private int shadowHp;
+  private int playerHp;
+  private int damage;
 
 // Default Constructor 
   Fight(){
